@@ -32,8 +32,9 @@ public class mainframe extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        label1 = new java.awt.Label();
+        jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,16 +51,15 @@ public class mainframe extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(90, 240, 151, 59);
+        jButton2.setBounds(100, 210, 151, 59);
 
-        label1.setAlignment(java.awt.Label.CENTER);
-        label1.setBackground(new java.awt.Color(255, 255, 255));
-        label1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        label1.setPreferredSize(new java.awt.Dimension(42, 20));
-        label1.setText("Welcome to Shri Ram Institute of Science & Technology ");
-        jPanel1.add(label1);
-        label1.setBounds(140, 30, 350, 52);
-        label1.getAccessibleContext().setAccessibleName("");
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 255, 0));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Shri Ram Institute of Technology ");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(0, 80, 660, 50);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Add.png"))); // NOI18N
         jButton1.setText("student login");
@@ -74,7 +74,16 @@ public class mainframe extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(420, 240, 151, 59);
+        jButton1.setBounds(420, 210, 151, 59);
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Welcome to ");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel2.setPreferredSize(new java.awt.Dimension(274, 20));
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(0, 20, 660, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/bk4.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -97,9 +106,8 @@ public class mainframe extends javax.swing.JFrame {
 
         jPanel1.getAccessibleContext().setAccessibleParent(jPanel1);
 
-        getAccessibleContext().setAccessibleParent(label1);
-
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
@@ -158,7 +166,8 @@ public class mainframe extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }

@@ -6,7 +6,7 @@
 
 /**
  *
- * @author ADARSH DUBEY
+ * @author VAIBHAV SINGH
  */
 class User {
     private int sid,contact,pcode;
